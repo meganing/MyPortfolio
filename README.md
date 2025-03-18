@@ -15,6 +15,4 @@ Feel free to explore and reach out if you'd like to connect and collaborate!
 
 🔗 **https://meganing.github.io/MyPortfolio/**  
 
----
-
 🍀 Wish you a nice day ! 🎍
