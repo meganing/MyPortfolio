@@ -3,58 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiri Htet Thwe | AI Engineer</title>
+    <meta name="description" content="Thiri Htet Thwe - AI & Software Engineer specializing in computer vision, game development, and web applications">
+    <meta name="keywords" content="software engineer, AI engineer, computer vision, game development, unity, C#, portfolio">
+    <meta name="author" content="Thiri Htet Thwe">
+    
+    <!-- Theme color for browser UI -->
+    <meta name="theme-color" content="#8a6bc1">
+    
+    <title>Thiri Htet Thwe | AI & Software Engineer</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/scripts.js" as="script">
+    
+    <!-- External resources -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Fixed Side Navigation -->
-    <nav class="side-nav">
-        <div class="logo">
+    <nav class="side-nav" aria-label="Main navigation">
+        <div class="logo" aria-hidden="true">
             <span>THT</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
-            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
-            <li><a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i><span>Skills</span></a></li>
-            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
-            <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+            <li><a href="#home" class="nav-link active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-user" aria-hidden="true"></i><span>About</span></a></li>
+            <li><a href="#skills" class="nav-link"><i class="fas fa-laptop-code" aria-hidden="true"></i><span>Skills</span></a></li>
+            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram" aria-hidden="true"></i><span>Projects</span></a></li>
+            <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Experience</span></a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span></a></li>
         </ul>
         <div class="nav-footer">
             <div class="social-links">
-                <a href="https://github.com/meganing" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/yucoeverywhere" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/meganing" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
             </div>
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-moon"></i>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <span class="sr-only">Toggle Theme</span>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Menu Toggle -->
-    <div class="menu-toggle">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="side-nav" aria-label="Toggle menu">
         <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
+    </button>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <!-- Home Section -->
         <section id="home" class="home-section">
             <div class="container">
                 <div class="home-content">
                     <div class="home-text">
                         <h1 class="name">Thiri Htet Thwe</h1>
-                        <h2 class="title">AI Engineer & Computer Vision Specialist</h2>
-                        <p class="bio">Building intelligent vision systems and creating immersive experiences through AI innovation.</p>
+                        <h2 class="title">AI & Software Engineer</h2>
+                        <p class="bio" data-text="Building interactive applications with a focus on efficient code, innovative solutions, and user-centered design.">Building interactive applications with a focus on efficient code, innovative solutions, and user-centered design.</p>
                         <div class="cta-buttons">
                             <a href="#projects" class="btn btn-primary">View My Work</a>
                             <a href="#contact" class="btn btn-outline">Get In Touch</a>
@@ -62,7 +78,7 @@
                     </div>
                     <div class="home-image">
                         <div class="image-container">
-                            <img src="images/boat.jpg" alt="Thiri Htet Thwe">
+                            <img src="images/boat.jpg" alt="Thiri Htet Thwe" width="320" height="320" loading="eager">
                         </div>
                     </div>
                 </div>
@@ -75,9 +91,9 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Passionate about AI and game development, I thrive on building interactive and impactful applications. I enjoy blending AI and real-world applications to create innovative solutions.</p>
-                        <p>As an AI and Computer Engineering student at CMKL University, I specialize in computer vision, deep learning, and AI-driven content creation. My work ranges from developing assistive technologies like the Sonar Audiobook App to creating immersive game experiences.</p>
-                        <p>Always eager to collaborate, experiment, and bring fun, cutting-edge ideas to life!</p>
+                        <p>Passionate about AI Engineering and software development, I enjoy building interactive and impactful projects. I'm constantly learning new technologies and applying them to solve real-world problems.</p>
+                        <p>As a Computer Engineering student at CMKL University, I've worked on various projects ranging from computer vision applications to game development. I'm particularly interested in creating technology that enhances user experiences.</p>
+                        <p>I value teamwork, enjoy collaborative environments, and am eager to expand my skills through new challenges and opportunities.</p>
                         
                         <div class="about-details">
                             <div class="detail-item">
@@ -86,7 +102,7 @@
                             </div>
                             <div class="detail-item">
                                 <h3>Email:</h3>
-                                <p>tthwe@cmkl.ac.th</p>
+                                <p><a href="mailto:shuaixue.thiri@gmail.com">shuaixue.thiri@gmail.com</a></p>
                             </div>
                             <div class="detail-item">
                                 <h3>Location:</h3>
@@ -98,10 +114,10 @@
                             </div>
                         </div>
                         
-                        <a href="https://drive.google.com/file/d/1AdfwxKl8Zrzk5gdCeL_tSbsBcCJBBk8Z/view?usp=sharing" class="btn btn-primary">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1AdfwxKl8Zrzk5gdCeL_tSbsBcCJBBk8Z/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download CV</a>
                     </div>
                     <div class="about-image">
-                        <img src="images/museum.jpg" alt="About Me">
+                        <img src="images/museum.jpg" alt="About Me - working in a museum" width="400" height="300" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -112,72 +128,84 @@
             <div class="container">
                 <h2 class="section-title">My Skills</h2>
                 <div class="skills-container">
-                    <div class="skill-category">
+                    <!-- Web Development Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                         <div class="skill-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Programming</h3>
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                            <h3>Web Development</h3>
                         </div>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span>Python</span>
-                                    <span>90%</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
+                                    <div class="progress" style="width: 0%" data-width="80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>C</span>
-                                    <span>75%</span>
+                                    <span>HTML/CSS</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 75%"></div>
+                                    <div class="progress" style="width: 0%" data-width="50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>WordPress</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 0%" data-width="50%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
+                    <!-- Data & Analytics Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                         <div class="skill-header">
-                            <i class="fas fa-brain"></i>
-                            <h3>Machine Learning & AI</h3>
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                            <h3>Data & Analytics</h3>
                         </div>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span>Computer Vision</span>
-                                    <span>85%</span>
+                                    <span>75%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 85%"></div>
+                                    <div class="progress" style="width: 0%" data-width="75%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>Deep Learning</span>
-                                    <span>80%</span>
+                                    <span>Machine Learning</span>
+                                    <span>75%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 80%"></div>
+                                    <div class="progress" style="width: 0%" data-width="75%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>AI Model Training</span>
-                                    <span>82%</span>
+                                    <span>Data Visualization</span>
+                                    <span>70%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 82%"></div>
+                                    <div class="progress" style="width: 0%" data-width="70%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
+                    <!-- Game Development Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
                         <div class="skill-header">
-                            <i class="fas fa-gamepad"></i>
+                            <i class="fas fa-gamepad" aria-hidden="true"></i>
                             <h3>Game Development</h3>
                         </div>
                         <div class="skill-list">
@@ -187,63 +215,72 @@
                                     <span>78%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 78%"></div>
+                                    <div class="progress" style="width: 0%" data-width="78%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>AR Applications</span>
-                                    <span>72%</span>
+                                    <span>C# (Unity)</span>
+                                    <span>75%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 72%"></div>
+                                    <div class="progress" style="width: 0%" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>AR Development</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 0%" data-width="70%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
+                    <!-- Programming Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                         <div class="skill-header">
-                            <i class="fas fa-paint-brush"></i>
-                            <h3>Design</h3>
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <h3>Programming</h3>
                         </div>
                         <div class="skill-list">
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>Figma</span>
-                                    <span>65%</span>
+                                    <span>C</span>
+                                    <span>85%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 65%"></div>
+                                    <div class="progress" style="width: 0%" data-width="85%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span>Graphic Design</span>
-                                    <span>60%</span>
+                                    <span>Python</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 60%"></div>
+                                    <div class="progress" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 0%" data-width="65%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="languages">
+    
+                <!-- Languages Section -->
+                <div class="languages" data-aos="fade-up">
                     <h3>Languages</h3>
                     <div class="language-list">
-                        <div class="language-item">
-                            <div class="language-info">
-                                <span class="language-name">Burmese</span>
-                                <span class="language-level">Native</span>
-                            </div>
-                            <div class="language-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 100%"></div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="language-item">
                             <div class="language-info">
                                 <span class="language-name">Chinese Mandarin</span>
@@ -251,7 +288,18 @@
                             </div>
                             <div class="language-progress">
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 100%"></div>
+                                    <div class="progress" style="width: 0%" data-width="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Burmese</span>
+                                <span class="language-level">Native</span>
+                            </div>
+                            <div class="language-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 0%" data-width="100%"></div>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +310,7 @@
                             </div>
                             <div class="language-progress">
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 85%"></div>
+                                    <div class="progress" style="width: 0%" data-width="85%"></div>
                                 </div>
                             </div>
                         </div>
@@ -271,38 +319,40 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects Section with more enhanced structure -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
                 
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
                     <button class="filter-btn" data-filter="cv">Computer Vision</button>
-                    <button class="filter-btn" data-filter="ar">AR</button>
+                    <button class="filter-btn" data-filter="game">Game Development</button>
                 </div>
                 
                 <div class="projects-grid">
-                    <div class="project-card" data-category="ai cv">
+                    <!-- Sonar Audiobooks Project -->
+                    <article class="project-card" data-category="cv web" data-aos="fade-up">
                         <div class="project-img">
-                            <img src="images/Sonar Second Poster.png" alt="Sonar Audiobooks">
+                            <img src="images/Sonar Second Poster.png" alt="Sonar Audiobooks Interface" width="400" height="225" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Sonar Audiobooks</h3>
                             <div class="project-tags">
-                                <span class="tag">AI</span>
+                                <span class="tag">Computer Vision</span>
                                 <span class="tag">OCR</span>
                                 <span class="tag">Accessibility</span>
                             </div>
-                            <p>A groundbreaking tool that transforms physical books into natural-sounding audiobooks for the blind, highlighting my commitment to accessibility and AI innovation.</p>
-                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <p>A tool that transforms physical books into audiobooks for the visually impaired, using computer vision and OCR technology to recognize text from book pages.</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="project-card" data-category="cv">
+                    <!-- Book Tracker Project -->
+                    <article class="project-card" data-category="cv" data-aos="fade-up" data-aos-delay="100">
                         <div class="project-img">
-                            <img src="images/booktracker.png" alt="Book Tracker">
+                            <img src="images/booktracker.png" alt="Book Tracker Application UI" width="400" height="225" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Book Tracker with YOLO</h3>
@@ -311,30 +361,32 @@
                                 <span class="tag">YOLO</span>
                                 <span class="tag">Object Detection</span>
                             </div>
-                            <p>AI-powered real-time book alignment assistant that helps visually impaired users position books correctly under a camera using voice feedback.</p>
-                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <p>Real-time book alignment assistant that helps visually impaired users position books correctly under a camera using voice feedback and object detection algorithms.</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="project-card" data-category="ai">
+                    <!-- Thai Neighborhood Project -->
+                    <article class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="200">
                         <div class="project-img">
-                            <img src="images/MHTN Poster.png" alt="Thai Neighborhood">
+                            <img src="images/MHTN Poster.png" alt="Thai Neighborhood Game Screenshot" width="400" height="225" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>My Happy Thai Neighborhood</h3>
                             <div class="project-tags">
                                 <span class="tag">Game Dev</span>
                                 <span class="tag">Unity</span>
-                                <span class="tag">AI</span>
+                                <span class="tag">Interactive Design</span>
                             </div>
-                            <p>A webtoon-based game featuring AI-generated content and an engaging game loop designed in Unity with interactive storytelling.</p>
-                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <p>A webtoon-based game featuring generated content and an engaging game loop designed in Unity with interactive storytelling elements that introduce Thai culture.</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="project-card" data-category="ar">
+                    <!-- Harmony Vision Project -->
+                    <article class="project-card" data-category="game" data-aos="fade-up" data-aos-delay="300">
                         <div class="project-img">
-                            <img src="images/harmony.webp" alt="Harmony Vision">
+                            <img src="images/harmony.webp" alt="Harmony Vision AR App" width="400" height="225" loading="lazy">
                         </div>
                         <div class="project-info">
                             <h3>Harmony Vision</h3>
@@ -342,11 +394,12 @@
                                 <span class="tag">AR</span>
                                 <span class="tag">Unity</span>
                                 <span class="tag">Arduino</span>
+                                <span class="tag">Hardware</span>
                             </div>
-                            <p>An augmented reality guitar training app with haptic feedback, integrating Arduino with Unity for instant feedback when pressing note buttons.</p>
-                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            <p>An augmented reality guitar training app featuring a custom-built haptic feedback system. Used Arduino Nano to control vibration motors placed on fingertips, creating tactile feedback when learners need to press specific guitar strings. Implemented serial communication between Unity and Arduino for real-time synchronization.</p>
+                            <a href="#" class="project-link">View Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -357,44 +410,70 @@
                 <h2 class="section-title">Work Experience</h2>
                 
                 <div class="timeline">
-                    <div class="timeline-item">
+                    <!-- Project Coordinator Experience -->
+                    <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-marker"></div>
-                        <div class="timeline-content">
+                        <article class="timeline-content">
                             <span class="timeline-date">Jan 2024 - Present</span>
-                            <h3>Project Producer Intern</h3>
+                            <h3>Project Coordinator Intern</h3>
                             <h4>CMKL University</h4>
-                            <p>Coordinated project timelines, tasks, and progress for AI and computer vision-related projects. Conducted research relevant to ongoing projects and managed funding submissions.</p>
-                        </div>
+                            <p>Coordinating project timelines, tasks, and progress for faculty projects under Professor Lorenzo, conducting research relevant to ongoing projects and managing funding submissions.</p>
+                        </article>
+                    </div>
+
+                    <!-- Teaching Assistant Experience -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-marker"></div>
+                        <article class="timeline-content">
+                            <span class="timeline-date">Jul 2024</span>
+                            <h3>AICE WARP CAMP Teaching Assistant</h3>
+                            <h4>CMKL University</h4>
+                            <p>Assisted instructors with game development curriculum, provided technical support to students learning Unity, and facilitated hands-on coding activities.</p>
+                        </article>
+                    </div>
+
+                    <!-- Winter Camp Experience -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="timeline-marker"></div>
+                        <article class="timeline-content">
+                            <span class="timeline-date">Jan 2024</span>
+                            <h3>Winter Camp Workshop Volunteer Facilitator</h3>
+                            <h4>Min Ma Haw School, Mae Sot</h4>
+                            <p>Shared knowledge about simple game creation processes, planned lessons and activities, and facilitated interactive learning sessions for students.</p>
+                        </article>
                     </div>
                     
-                    <div class="timeline-item">
+                    <!-- Event Coordinator Experience -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
                         <div class="timeline-marker"></div>
-                        <div class="timeline-content">
+                        <article class="timeline-content">
+                            <span class="timeline-date">Aug 2023 - Jan 2024</span>
+                            <h3>Event Coordinator Assistant</h3>
+                            <h4>CMKL University</h4>
+                            <p>Planned student activities for the academic year and assisted with activities preparation and logistics for various university events.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- X-cellent Camp Experience -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="timeline-marker"></div>
+                        <article class="timeline-content">
                             <span class="timeline-date">Oct 2023</span>
                             <h3>X-cellent Camp Volunteer Instructor</h3>
                             <h4>CMKL University</h4>
                             <p>Shared knowledge about algorithms and planned and facilitated interactive learning sessions for camp participants.</p>
-                        </div>
+                        </article>
                     </div>
                     
-                    <div class="timeline-item">
+                    <!-- Software Tester Experience -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
                         <div class="timeline-marker"></div>
-                        <div class="timeline-content">
+                        <article class="timeline-content">
                             <span class="timeline-date">Dec 2022 - March 2023</span>
                             <h3>Software Tester</h3>
                             <h4>Teacher Su International School</h4>
-                            <p>Executed manual testing by simulating user behavior to identify bugs and UI/UX improvements. Evaluated software usability and design alignment to ensure intuitive user experience.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Jan 2021 - Feb 2021</span>
-                            <h3>Data Recorder</h3>
-                            <h4>IMReading Club</h4>
-                            <p>Collected and recorded book club members' book-reading data, tracking engagement and activity. Created data visualizations to showcase member progress and participation.</p>
-                        </div>
+                            <p>Executed manual testing by simulating user behavior to identify bugs and UI/UX improvements, evaluated software usability and design alignment to ensure intuitive user experience.</p>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -407,60 +486,70 @@
                 
                 <div class="contact-container">
                     <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item" data-aos="fade-up">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <div>
                                 <h3>Location</h3>
                                 <p>Lat Krabang, Bangkok, Thailand</p>
                             </div>
                         </div>
                         
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <div>
                                 <h3>Email</h3>
-                                <p>tthwe@cmkl.ac.th</p>
+                                <p><a href="mailto:shuaixue.thiri@gmail.com">shuaixue.thiri@gmail.com</a></p>
                             </div>
                         </div>
                         
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <div>
                                 <h3>Phone</h3>
-                                <p>+66 091 553 3688</p>
+                                <p><a href="tel:+66091553688">+66 091 553 3688</a></p>
                             </div>
                         </div>
                         
-                        <div class="social-media">
+                        <div class="social-media" data-aos="fade-up" data-aos-delay="300">
                             <h3>Follow Me</h3>
                             <div class="social-icons">
-                                <a href="https://github.com/meganing"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.facebook.com/yucoeverywhere"><i class="fab fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/thiriishere"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/meganing" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/thiriishere" aria-label="Instagram Profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="contact-form">
-                        <form id="contactForm">
+                    <div class="contact-form" data-aos="fade-up">
+                        <form id="contactForm" novalidate>
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
+                                <label for="name" class="sr-only">Your Name</label>
+                                <input type="text" id="name" placeholder="Your Name" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
                             </div>
                             
                             <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
+                                <label for="email" class="sr-only">Your Email</label>
+                                <input type="email" id="email" placeholder="Your Email" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
                             </div>
                             
                             <div class="form-group">
-                                <input type="text" placeholder="Subject" required>
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" id="subject" placeholder="Subject" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
                             </div>
                             
                             <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                                <label for="message" class="sr-only">Your Message</label>
+                                <textarea id="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+                                <span class="error-message" aria-live="polite"></span>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -472,20 +561,19 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="social-footer">
-                        <a href="https://github.com/meganing"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/yucoeverywhere"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/thiriishere"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/meganing" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/thiriishere" aria-label="Instagram Profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
-                    <p>&copy; 2025 Thiri Htet Thwe. All rights reserved.</p>
+                    <p>&copy; <span id="current-year">2025</span> Thiri Htet Thwe. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </main>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </a>
 
     <!-- JavaScript -->
